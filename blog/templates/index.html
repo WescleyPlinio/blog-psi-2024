@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block conteudo %}
+{% for x in Post %}{% endfor %}
+<div class="container">
+  <div class="container-fluid row">
+    <div class="card md-4" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="imagem">
+      <div class="card-body">
+        <h5 class="card-title">x.titulo</h5>
+        <p class="card-text">x.descricao</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock conteudo %}
