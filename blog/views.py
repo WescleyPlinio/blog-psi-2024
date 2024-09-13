@@ -7,3 +7,12 @@ def index(request):
         "posts" : Post,
     }
     return render(request, "index.html", context)
+
+def help(request):
+    return render(request, "help.html")
+
+def disturbs(request):
+    return render(request, "disturbs.html")
+
+def aboutus(request):
+    return render(request, "aboutus.html")

@@ -1,16 +1,31 @@
 {% extends "base.html" %}
 {% load static %}
 {% block conteudo %}
-{% for x in Post %}{% endfor %}
-<div class="container">
-  <div class="container-fluid row">
-    <div class="card md-4" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="imagem">
-      <div class="card-body">
-        <h5 class="card-title">x.titulo</h5>
-        <p class="card-text">x.descricao</p>
+<div class="container-fluid bg-success">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="card-body ">
+          <h1 style="font-size: 3.5em;" class="text-white">Análise de distúrbios <br> alimentares</h1>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'imgs/menu.svg' %}" class="img-fluid rounded-start" alt="img hero">
       </div>
     </div>
   </div>
 </div>
+<div class="container-fluid" style="padding: 1px;">
+  <div class="container" >
+    <h2 class="text-center py-3 text-success">O que é este site?</h2>
+    <p class="mt-1 mb-5" style="font-size: 1.3em;">
+      No Bygolis, compreendemos que os <a class="text-success" href="disturbs.html">distúrbios alimentares</a> são desafios 
+      complexos que afetam não apenas a saúde física, mas também o bem-estar emocional e psicológico de quem os 
+      enfrenta. Nosso objetivo é fornecer um espaço acolhedor e informativo, onde você pode encontrar análises 
+      detalhadas, maneiras de <a class="text-success" href="help.html">buscar ajuda</a> e formas de prevenção contra os 
+      distúrbios.
+    </p>
+  </div>
+</div>
+
 {% endblock conteudo %}
