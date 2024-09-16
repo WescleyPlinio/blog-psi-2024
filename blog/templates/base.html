@@ -21,20 +21,20 @@
   <body class="suse-letrinhas">
     <nav class="navbar navbar-expand-lg py-3 bg-success">
         <div class="container">
-          <a class="navbar-brand text-white" href="index.html">Início</a>
+          <a class="navbar-brand text-white" href="{% url 'index' %}">Início</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link text-white" href="disturbs.html">Principais distúrbios alimentares</a>
+                <a class="nav-link text-white" href="{% url 'disturbs' %}">Principais distúrbios alimentares</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="help.html">Procure ajuda</a>
+                <a class="nav-link text-white" href="{% url 'help' %}">Procure ajuda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="aboutus.html">Sobre nós</a>
+                <a class="nav-link text-white" href="{% url 'aboutus' %}">Sobre nós</a>
               </li>
               
             </ul>
