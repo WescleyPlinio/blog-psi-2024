@@ -3,7 +3,9 @@ from django.db import models
 class Caracteristica(models.Model):
     nome = models.CharField(max_length=50)
     descricao = models.TextField(max_length=350)
-
+    
+    def __str__(self):
+        return self.nome
 
 class Post(models.Model):
     titulo = models.CharField(max_length=50)

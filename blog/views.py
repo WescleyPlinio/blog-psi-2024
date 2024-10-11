@@ -16,3 +16,10 @@ def disturbs(request):
 
 def aboutus(request):
     return render(request, "aboutus.html")
+
+def post(request, id):
+    postagem = Post.objects.get(id = id)
+    context = {
+        "post" : postagem
+    }
+    return render(request, "post.html", context)
