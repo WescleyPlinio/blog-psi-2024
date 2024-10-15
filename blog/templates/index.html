@@ -2,7 +2,7 @@
 {% load static %}
 {% block title %}Início{% endblock title %}
 {% block conteudo %}
-<div class="container-fluid bg-success">
+<div class="container-fluid bg-danger">
   <div class="container">
     <div class="row g-0">
       <div class="col-md-6 d-flex align-items-center">
@@ -18,14 +18,24 @@
 </div>
 <div class="container-fluid" style="padding: 1px;">
   <div class="container" >
-    <h2 class="text-center py-3 text-success">O que é este site?</h2>
+    <h2 class="text-center py-3 text-danger">O que é este site?</h2>
     <p class="mt-1 mb-5" style="font-size: 1.3em;">
-      No Bygolis, compreendemos que os <a class="text-success" href="{% url 'disturbs' %}">distúrbios alimentares</a> são desafios 
+      No Bygolis, compreendemos que os <a class="text-danger" href="{% url 'disturbs' %}">distúrbios alimentares</a> são desafios 
       complexos que afetam não apenas a saúde física, mas também o bem-estar emocional e psicológico de quem os 
       enfrenta. Nosso objetivo é fornecer um espaço acolhedor e informativo, onde você pode encontrar análises 
-      detalhadas, maneiras de <a class="text-success" href="{% url 'help' %}">buscar ajuda</a> e formas de prevenção contra os 
+      detalhadas, maneiras de <a class="text-danger" href="{% url 'help' %}">buscar ajuda</a> e formas de prevenção contra os 
       distúrbios.
     </p>
+    <h2 class="text-center py-3 text-danger">Sobre o criador:</h2>
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="card m-2">
+        <img src="{% static '{{imgs/wescley.jpg}}' %}" alt="Wescley" class="card-img-top">
+        <div class="card-body">
+          <h3 class="card-tittle text-center text-danger">Wescley Plínio</h3>
+          <p class="card-text">{{post.descricao}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

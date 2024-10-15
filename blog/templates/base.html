@@ -19,7 +19,7 @@
     </style>
   </head>
   <body class="suse-letrinhas">
-    <nav class="navbar navbar-expand-lg py-3 bg-success">
+    <nav class="navbar navbar-expand-lg py-3 bg-danger">
         <div class="container">
           <a class="navbar-brand text-white" href="{% url 'index' %}">Início</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +33,6 @@
               <li class="nav-item">
                 <a class="nav-link text-white" href="{% url 'help' %}">Procure ajuda</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="{% url 'aboutus' %}">Sobre nós</a>
-              </li>
-              
             </ul>
           </div>
         </div>
@@ -45,7 +41,7 @@
 {% block conteudo %}
 {% endblock conteudo %}
 
-    <footer class="text-center py-4 bg-success">
+    <footer class="text-center py-4 bg-danger">
       <div class="container">
           <p class="text-white">&copy; 2024 Bygolis. Todos os direitos reservados.</p>
       </div>
