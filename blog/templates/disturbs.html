@@ -21,7 +21,7 @@
           Esses distúrbios são frequentemente associados a fatores psicológicos, 
           genéticos, biológicos, sociais e culturais. O tratamento pode envolver uma 
           combinação de psicoterapia, acompanhamento médico e, em alguns casos, 
-          medicamentos. <a href="help.html" class="text-danger">É essencial buscar ajuda profissional</a> o 
+          medicamentos. <a href="{% url "help" %}" class="text-danger">É essencial buscar ajuda profissional</a> o 
           quanto antes para prevenir complicações graves.
 
         </p>
@@ -34,6 +34,7 @@
           <div class="card-body">
             <h3 class="card-tittle text-center text-danger">{{post.titulo}}</h3>
             <p class="card-text">{{post.descricao}}</p>
+            <a href="{% url "post" post.id %}" class="text-danger">Ver postagem</a>
           </div>
         </div>
         {% endfor %}

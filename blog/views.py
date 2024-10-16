@@ -19,4 +19,5 @@ def post(request, id):
     context = {
         "post" : postagem
     }
+    print(postagem.carac)
     return render(request, "post.html", context)
